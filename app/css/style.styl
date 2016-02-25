@@ -1,0 +1,169 @@
+@import "variable/*"
+@import "icon/*"
+@import 'axis'
+@import 'jeet'
+@import 'rupture'
+
+border-box-html()
+fluid-media() //care flex box image
+rupture.scale = 0 400px 600px 780px 960px 1300px
+rupture.scale-names = 'xs' 'sm' 'm' 'l' 'xl' 'hd'
+jeet.gutter = 1
+
+red = #0665AC;
+blue = #0665ac;
+
+body
+	font-family Helvetica
+a
+	text-decoration none
+
+.container
+	center(960px)
+
+.top-logo
+	height 60px
+	flex(between)
+.top-logo-text
+	color #b90a0a
+	font-family Helvetica
+	font-size 30px
+	font-weight 400
+	line-height 24px
+	font-weight 600
+.top-logo-auth
+	a
+		color black
+	font-family Helvetica
+	font-size 16px
+	font-weight 300
+	line-height 24px
+
+.main-baner-wrap
+	flex(between)
+	height 350px
+.main-baner
+	background-color #044476
+	background-image linear-gradient(to left, #3f70b8 0%, #294372 100%)
+.main-baner-left
+	width 50%
+.main-baner-left-text
+	span
+		font-size 24px
+	width 90%
+	font-weight 400
+	line-height 24px
+	font-size 18px
+	color white
+.main-baner-left-but
+	background-color #b90a0a
+	border-radius 3px
+	size 200px 45px
+	display inline-block
+	color white
+	margin-top 20px
+	flex(mid)
+.main-baner-right
+	img
+		width 100%
+		
+.advant
+	margin 55px 0
+.advant-title
+	color #b90a0a
+	font-size 30px
+	font-weight 400
+	text-align center
+	margin-bottom 30px
+	font-weight 600
+.advant-el
+	width 46%
+	flex(mid)
+	margin-bottom 40px
+	align-items flex-start
+.advant-el-wrap
+	flex(between)
+	flex-wrap wrap
+.advant-el-left
+	margin-right 20px
+.advant-el-right
+	width 100%
+.advant-el-right-title
+	color red
+	font-family Helvetica
+	font-size 18px
+	font-weight 400
+	margin-bottom 10px
+.advant-el-right-text
+	color #444
+	font-family Helvetica
+	font-size 14px
+	font-weight 300
+	
+
+.news
+	background #F2F2F2
+	padding 50px 0
+//.container
+//.news-wraper
+.news-title
+	color #b90a0a
+	font-size 30px
+	font-weight 400
+	text-align center
+	margin-bottom 30px
+	font-weight 600
+	font-size 18px
+.news-el-wrap
+	flex(mid)
+	flex-wrap wrap
+.news-el
+	width 47%
+	margin-bottom 40px
+	margin-right 20px
+.news-el-title
+	color blue
+	font-size 18px
+	font-weight 300
+	margin-bottom 15px
+.news-el-date
+	color #444
+	font-family Helvetica
+	font-size 14px
+	font-weight 300
+	margin-left 10px
+.news-el-text
+	color #444
+	font-family Helvetica
+	font-size 14px
+	font-weight 300
+.docs-wraper
+	padding 50px 0
+.docs-title
+	color #b90a0a
+	font-size 30px
+	font-weight 400
+	text-align center
+	margin-bottom 30px
+	font-weight 600
+.docs-el-wrap
+	flex(between)
+.docs-el
+	margin-right 80px
+	a
+		flex(between)
+		.docs-el-text 
+			color blue
+			font-size 18px
+			font-weight 600
+		.docs-el-img
+			margin-left 20px
+
+.footer
+	background-color #044476
+	background-image linear-gradient(to left, #3f70b8 0%, #294372 100%)
+	padding 45px 0
+.footer-text
+	color white
+	font-size 18px
+	font-weight 600

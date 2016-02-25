@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+html(lang="en")
+	//Include header
+	include ./block_html/head.jade
+body
+	.container
+		.top-logo
+			.top-logo-text IT Control
+			.top-logo-auth 
+				a(href="#") Авторизация
+	.main-baner
+		.container
+			.main-baner-wrap
+				.main-baner-left
+					.main-baner-left-text <span>IT Control</span> - это программное средство, обспечивающее эффективное проведение процедуры оценки уровня организации эксплуатации ИТС Банка России 
+					a(href="#").main-baner-left-but
+						span Начать работу
+				.main-baner-right
+					img(src="img/baner-img.png", alt="")
+
+	.advant
+		.container
+			.advant-title Возможности IT Control
+			.advant-el-wrap
+				.advant-el
+					.advant-el-left
+						img(src="img/icon-search.png", alt="")
+					.advant-el-right
+						.advant-el-right-title Комплексные проверки
+						.advant-el-right-text Ведение рееста проверок и поддержание его в актуальном состоянии, выполнение проверок. Возможность распредение контрольных вопрсов по исполнителям, настройки этапов процесса проверки, необходимых требований к критериям, гибкая система аналитики результатов проверок.
+
+				.advant-el
+					.advant-el-left
+						img(src="img/icon-manager.png", alt="")
+					.advant-el-right
+						.advant-el-right-title Управление рисками 
+						.advant-el-right-text Проведение оценки рисков, управление процедурами внутреннего контроля, анализ оценки рисков, планирование меприятий, направленных на устранение негативных последствий от реализации рискового события, управление ключевыми рисковыми 		индикаторами риска, обуспечивающие контроль и мониторинг рисковых событий. 
+				
+				.advant-el
+					.advant-el-left
+						img(src="img/icon-template.png", alt="")
+					.advant-el-right
+						.advant-el-right-title Шаблон каталога проверок 
+						.advant-el-right-text Возможность ведения шаблонов проверок, поддерживающие многоуровневую иерархию контрольных вопросов, для последующего использования при проведении проверок
+
+				.advant-el
+					.advant-el-left
+						img(src="img/icon-control.png", alt="")
+					.advant-el-right
+						.advant-el-right-title Контрольные мероприятия 
+						.advant-el-right-text Регистрация и контроль недостатков, выявленных в ходе проверок, формирование мероприятий по устранению выявленных недостаток, формирование проверок, направленных на выявление недостатков и рисковых событий. 
+
+				.advant-el
+					.advant-el-left
+						img(src="img/icon-tune.png", alt="")
+					.advant-el-right
+						.advant-el-right-title Настройка 
+						.advant-el-right-text Гибкая возможность настройки ПС: управление персоналом, уровнем доступа и группами безопасности, настройка общих параметров ситемы, системные настройки. 
+
+				.advant-el
+					.advant-el-left
+						img(src="img/icon-report.png", alt="")
+					.advant-el-right
+						.advant-el-right-title Отчеты 
+						.advant-el-right-text Мониторинг и контроль состояния системы: учет рисков и рисковых событий, результаты проверок, результативность контрольных мероприятий и т.д. 
+	
+	.news
+		.container
+			.news-wraper
+				.news-title Новости ПС
+				.news-el-wrap
+					- for (var x = 0; x < 4; x++)
+						.news-el
+							.news-el-title Реализована компонента «Ключевые рисковые индикаторы»
+								span.news-el-date / 25.01.2016
+							.news-el-text Компонента предназначена для описания, расчета и реагирования на пороговые значения ключевых рисковых индикаторов, необходимых для контроля и мониторинга наступления рисковых событий»
+	
+	.docs
+		.container
+			.docs-wraper
+				.docs-title Документация
+				.docs-el-wrap
+					.docs-el
+						a(href="#")
+							.docs-el-text Руководство системного администратора
+							.docs-el-img
+								img(src="img/icon-download.png", alt="")
+					.docs-el
+						a(href="#")
+							.docs-el-text Руководство пользователя
+							.docs-el-img
+								img(src="img/icon-download.png", alt="")
+	
+	.footer
+		.container
+			.footer-text Текущая версия приложения: 2.8.0.641 (Release)
+
+	//Include Footer
+	include ./block_html/script.jade
