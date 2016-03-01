@@ -4,4 +4,38 @@ head
 	meta(charset="UTF-8")
 	title Document
 body
+	<!DOCTYPE html>
+html(lang="en")
+	//Include header
+	include ./block_html/head.jade
+body
+	.container
+		.top-logo
+			.top-logo-text ПС Контроль и оценка
+			.top-logo-auth 
+				a(href="#") Авторизация
+	.main-baner
+		.container
+			.main-baner-wrap
+				.main-baner-left
+					.main-baner-left-text Программное средство контроля и оценки уровня организации эксплуатации ИТС в подразделениях информатизации Банка России
+					a(href="#").main-baner-left-but
+						span Начать работу
+				.main-baner-right
+					img(src="img/baner-img.png", alt="")
 	
+	.breadcrumbs
+		.container
+	.advant
+		.container
+			.advant-title Основные возможности
+			
+	
+
+	
+	.footer
+		.container
+			.footer-text Текущая версия приложения: 2.8.0.641 (Release)
+
+	//Include Footer
+	include ./block_html/script.jade
