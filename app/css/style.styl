@@ -17,13 +17,15 @@ body
 	font-family Helvetica
 a
 	text-decoration none
-
+	
+.main-wraper
+	min-width 960px
 .container
 	center(960px)
 
 .top-logo
 	height 60px
-	flex(between)
+	flex(mid)
 .top-logo-text
 	color #b90a0a
 	font-family Helvetica
@@ -31,6 +33,7 @@ a
 	font-weight 400
 	line-height 24px
 	font-weight 600
+	text-align center
 .top-logo-auth
 	a
 		color black
@@ -41,7 +44,7 @@ a
 
 .main-baner-wrap
 	flex(between)
-	height 350px
+	height 450px
 .main-baner
 	background-color #044476
 	background-image linear-gradient(to left, #3f70b8 0%, #294372 100%)
@@ -58,10 +61,11 @@ a
 .main-baner-left-but
 	background-color #b90a0a
 	border-radius 3px
-	size 200px 45px
+	size 250px 65px
 	display inline-block
 	color white
 	margin-top 20px
+	text-align center
 	flex(mid)
 	tr(all)
 	&:hover
@@ -148,6 +152,10 @@ a
 	font-weight 300
 .docs-wraper
 	padding 50px 0
+	
+.docs
+	background-color #f2f2f2
+	margin-bottom 6s0px
 .docs-title
 	color #b90a0a
 	font-size 30px
@@ -157,8 +165,10 @@ a
 	font-weight 600
 .docs-el-wrap
 	flex(between)
+	flex-wrap wrap
 .docs-el
-	margin-right 80px
+	width 45%
+	margin-bottom 40px
 	a
 		flex(between)
 		.docs-el-text 
@@ -166,7 +176,7 @@ a
 			font-size 18px
 			font-weight 600
 		.docs-el-img
-			margin-left 20px
+			margin-right 20px
 
 .footer
 	background-color #044476
@@ -219,3 +229,11 @@ a
 			color black
 			&:first-child
 				width 150px
+
+.footer__cont
+	flex(between)
+.footer-link
+	color white 
+	background #b90a0a 
+	display inline-block
+	padding 15px 40px
